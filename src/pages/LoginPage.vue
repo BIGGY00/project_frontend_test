@@ -84,7 +84,7 @@ const login = async () => {
     localStorage.setItem("token", response.data.data[0].token);
     email.value = "";
     password.value = "";
-    router.push({ name: "Patient" });
+    router.push({ name: "dashboard" });
   } catch (error) {
     console.error(error);
     email.value = "";
