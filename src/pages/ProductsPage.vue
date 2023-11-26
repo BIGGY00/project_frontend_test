@@ -41,7 +41,7 @@
           v-for="item in filteredData"
           :key="item.id"
           outlined
-          class="q-ma-md"
+          class="q-ma-xl"
         >
           <div class="grid justify-center">
             <q-card-section class="flex justify-center">
@@ -94,7 +94,7 @@ const filteredData = ref([]);
 const fetchProducts = async () => {
   try {
     const response = await api.get(
-      `products?filter=&keyword=${keyword.value}&sortby=products.id&orderby=&page=1&limit=10`,
+      `products?filter=&keyword=${keyword.value}&sortby=products.id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

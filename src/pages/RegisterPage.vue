@@ -78,6 +78,7 @@
             v-model="access"
             :options="options"
             label="Type of user"
+            style="width: 450px"
             outlined
             lazy-rules
             :rules="[

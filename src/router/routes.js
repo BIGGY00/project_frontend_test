@@ -54,6 +54,21 @@ const routes = [
         component: () => import("pages/editProductPage.vue"),
         name: "editproduct",
       },
+      {
+        path: "/addcategory",
+        component: () => import("pages/addCategoryPage.vue"),
+        name: "addcategory",
+      },
+      {
+        path: "/editcategory",
+        component: () => import("pages/editCategoryPage.vue"),
+        name: "editcategory",
+      },
+      {
+        path: "/addstock",
+        component: () => import("pages/addStockPage.vue"),
+        name: "addstock",
+      },
     ],
   },
 

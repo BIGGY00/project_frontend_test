@@ -115,7 +115,7 @@ watch(image, () => {
 const fetchCategories = async () => {
   try {
     const response = await api.get(
-      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=10`,
+      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

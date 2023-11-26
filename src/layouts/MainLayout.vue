@@ -70,6 +70,8 @@ const essentialLinks = [
   { title: "Reports", icon: "summarize", name: "reports" },
   { title: "Add Product", icon: "", name: "addproduct" }, // hide
   { title: "Edit Product", icon: "", name: "editproduct" }, // hide
+  { title: "Add Category", icon: "", name: "addcategory" }, // hide
+  { title: "Edit Category", icon: "", name: "editcategory" }, // hide
 ];
 
 const router = useRouter();
@@ -114,7 +116,11 @@ const logout = async () => {
 
 const filteredEssentialLinks = computed(() =>
   essentialLinks.filter(
-    (link) => link.name !== "addproduct" && link.name !== "editproduct"
+    (link) =>
+      link.name !== "addproduct" &&
+      link.name !== "editproduct" &&
+      link.name !== "addcategory" &&
+      link.name !== "editcategory"
   )
 );
 </script>

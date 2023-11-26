@@ -124,7 +124,7 @@ const reportsTotal = ref("");
 const fetchProducts = async () => {
   try {
     const response = await api.get(
-      `products?filter=&keyword=&sortby=products.id&orderby=&page=1&limit=10`,
+      `products?filter=&keyword=&sortby=products.id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -140,7 +140,7 @@ const fetchProducts = async () => {
 const fetchCategories = async () => {
   try {
     const response = await api.get(
-      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=10`,
+      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -156,7 +156,7 @@ const fetchCategories = async () => {
 const fetchStocks = async () => {
   try {
     const response = await api.get(
-      `stocks?filter=&keyword=&sortby=id&orderby=&page=1&limit=10`,
+      `stocks?filter=&keyword=&sortby=id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -172,7 +172,7 @@ const fetchStocks = async () => {
 const fetchReports = async () => {
   try {
     const response = await api.get(
-      `orders?filter=&keyword=&sortby=id&orderby=&page=1&limit=10`,
+      `orders?filter=&keyword=&sortby=id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

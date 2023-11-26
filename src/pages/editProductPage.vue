@@ -108,7 +108,7 @@ const isHovered1 = ref(true);
 const fetchCategories = async () => {
   try {
     const response = await api.get(
-      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=10`,
+      `categories?filter=&keyword=&sortby=id&orderby=&page=1&limit=20`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -135,7 +135,6 @@ const detailProduct = async () => {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
     });
-    console.log(response.data.data[0]);
     name.value = response.data.data[0].name;
     stock.value = response.data.data[0].stock;
     price.value = response.data.data[0].price;
