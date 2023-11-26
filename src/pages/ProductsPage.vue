@@ -46,7 +46,7 @@
           <div class="grid justify-center">
             <q-card-section class="flex justify-center">
               <q-img
-                :src="`http://localhost:5005/api/v1/imgproducts/${item.image}`"
+                :src="`https://web-project-backend-riff.onrender.com/api/v1/imgproducts/${item.image}`"
                 alt="Product Image"
                 style="max-width: 300px; max-height: 300px"
               />

@@ -130,3 +130,9 @@ watch(keyword, () => {
   fetchCategories();
 });
 </script>
+
+<style scoped>
+.no-decoration {
+  text-decoration: underline;
+}
+</style>
