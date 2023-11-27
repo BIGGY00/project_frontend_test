@@ -84,7 +84,14 @@ const login = async () => {
     localStorage.setItem("token", response.data.data[0].token);
     email.value = "";
     password.value = "";
-    router.push({ name: "dashboard" });
+    const access = localStorage.getItem("access");
+    if (access == "0") {
+      router.push({ name: "dashboard" });
+    } else if (access == "1") {
+      router.push({ name: "menu" });
+    } else if (access == "2") {
+      router.push({ name: "dashboard" });
+    }
   } catch (error) {
     console.error(error);
     email.value = "";

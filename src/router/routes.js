@@ -71,6 +71,22 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/cashier",
+    component: () => import("layouts/HeadLayout.vue"),
+    children: [
+      {
+        path: "/menu",
+        component: () => import("pages/menuPage.vue"),
+        name: "menu",
+      },
+      {
+        path: "/orders",
+        component: () => import("pages/ordersPage.vue"),
+        name: "orders",
+      },
+    ],
+  },
 
   // Always leave this as last one,
   // but you can also remove it
